@@ -1,0 +1,13 @@
+<h1>DRAGON BALL Z Personajes</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!-- En la comunicacion de padre e hijo el de la izquierda es el hijo q envia los datos y la derecha
+        es la funcion del padre que recibe los datos -->
+        <dbz-list (onDelete)="onDeleteCharacter($event)" [characterList]="characters"></dbz-list>
+    </div>
+    <div class="col">
+        <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+    </div>
+</div>
